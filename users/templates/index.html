@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ city }}</h1>
+<h2>{{ adict.name }}</h2>
+<h3>{{ adict }}</h3>
+<h4>{{ adict.author }}</h4>
+<h5>{{ alist }}</h5>
+<h6>{{ alist.0 }}</h6>
+<ul>
+    {% for item in alist %}
+     <li>{{ item }}</li>
+        {% if item == 2 %}
+             <li>{{ item }}</li>
+
+        {% endif %}
+        {% empty %}
+    {% endfor %}
+
+
+
+</ul>
+</body>
+</html>
